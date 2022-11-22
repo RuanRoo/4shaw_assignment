@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url(//db.onlinewebfonts.com/c/8db94ce247ff2ab0b07a11e94f79591c?family=Geometos);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #F7F7F7;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerContainer {
+  height: 100.23px;
+  min-width: 100%;
+  position: absolute;
+  background-color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menuDiv {
+  display: block;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 884px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  color: #191C3F;
+  font-family: 'Geometos';
+  font-weight: lighter;
+  letter-spacing: 2.4px;
+  line-height: 16px;
+  font-size: 12px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 21px;
+  width: 264px;
+}
+
+.orderButton {
+  width: 105px;
+  height: 49px;
+  background-color: #22B573;
   color: white;
+  border: none;
+  border-radius: 7px;
+  align-items: center;
+  font-family: 'Geometos';
+  font-size: 12PX;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-link {
-  color: #61dafb;
+.heroContainer {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroImage {
+  width: 100%;
 }
