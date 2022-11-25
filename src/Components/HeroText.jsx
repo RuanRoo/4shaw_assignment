@@ -3,10 +3,10 @@ import logoSmall from '../Assets/logoSmall.png'
 
 function HeroText() {
   return (
-    <div>
-        <img src={logoSmall} alt="small logo" />
-        <div>TAILORED DAILY SUPPLEMENT SERVINGS</div>
-        <div>THE GAME HAS CHANGED</div>
+    <div className='heroText'>
+        <img src={logoSmall} alt="small logo" className='logoSmall' />
+        <div className='heroText1'>TAILORED DAILY SUPPLEMENT SERVINGS</div>
+        <div className='heroText2'>THE GAME HAS CHANGED</div>
     </div>
   )
 }

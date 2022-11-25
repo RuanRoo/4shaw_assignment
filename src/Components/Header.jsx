@@ -9,7 +9,7 @@ function Header() {
           <li>RANGE</li>
           <li>SUBSCRIPTIONS</li>
           <img src={logo} alt="logo" className="logo" />
-          <li>SUPPORT</li>
+          <li id="support">SUPPORT</li>
           <li>ACCOUNT</li>
         </ul>
       </div>
