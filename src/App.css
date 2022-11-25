@@ -47,10 +47,6 @@ body {
   align-items: center;
 }
 
-#support {
-  font-family: 'Agency FB';
-}
-
 .logo {
   height: 21px;
   width: 264px;
@@ -197,7 +193,7 @@ body {
 }
 
 .benefitsContainer {
-  max-width: 100vw;
+  max-width: 100%;
   height: 1609px;
   position: relative;
   overflow: hidden;
