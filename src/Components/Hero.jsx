@@ -11,7 +11,7 @@ function Hero() {
     const slides = [Hero1, Hero2, Hero3];
 
   return (
-    <div className='heroContainer'>
+    <div className='heroContainer' id='homePage'>
         <Header />
         <Carousel slides={slides} />
         

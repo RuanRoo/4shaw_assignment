@@ -2,11 +2,15 @@ import { useState } from "react";
 import { FAQData } from "./FAQData";
 
 const FAQ = () => {
-  const [accordion, setAccordion] = useState(-1);
+  const [selected, setSelected] = useState(null);
 
-  function toggleAccordion(index) {
-    setAccordion(index);
-  }
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+
+    setSelected(i);
+  };
 
   return (
     <>
@@ -15,41 +19,34 @@ const FAQ = () => {
           <h1 className="faqTitle">frequently asked questions</h1>
         </div>
         <div className="faqAccordion">
-          {FAQData.map((item, index) => (
-            <div key={index} onClick={() => toggleAccordion(index)}>
-              <div className="accordionHeading">
-                <div
-                  className={accordion === index ? "active" : ""}
-                  id="faqQuestion"
-                >
-                  {item.question}
-                </div>
-              </div>
-              <div>
-                {accordion === index ? (
-                  <span className="vertical">-</span>
-                ) : (
-                  <span className="vertical">+</span>
-                )}
-              </div>
+          {FAQData.map((item, i) => (
+            <div className="faqItem">
               <div
-                id="answerContainer"
-                className={accordion === index ? "active" : "inactive"}
+                className={
+                  selected === i ? "faqQuestion selected" : "faqQuestion"
+                }
+                onClick={() => toggle(i)}
               >
+                <p>{item.question}</p>
+                <span>{selected === i ? "x" : "+"}</span>
+              </div>
+              <div className={selected === i ? "faqAnswer show" : "faqAnswer"}>
                 <div className="answer">{item.answer}</div>
                 <div className="answer">{item.answer2}</div>
               </div>
+              <hr className="line" />
             </div>
           ))}
         </div>
+
         <div className="contactDiv">
-        <p className="contactText">
-          Didn`t find the answer you were looking for? Please <span className="contactUs">contact us </span>
-          and our team of experts will be happy to help.
+          <p className="contactText">
+            Didn`t find the answer you were looking for? Please{" "}
+            <span className="contactUs">contact us </span>
+            and our team of experts will be happy to help.
           </p>
+        </div>
       </div>
-      </div>
-      
     </>
   );
 };

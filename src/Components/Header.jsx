@@ -8,7 +8,7 @@ function Header() {
         <ul className="nav">
           <li>RANGE</li>
           <li>SUBSCRIPTIONS</li>
-          <img src={logo} alt="logo" className="logo" />
+          <a href="#homePage"><img src={logo} alt="logo" className="logo" id="home" /></a>
           <li >SUPPORT</li>
           <li>ACCOUNT</li>
         </ul>

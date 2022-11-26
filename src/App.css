@@ -10,7 +10,6 @@
 
 body {
   background-color: #F7F7F7;
-
 }
 
 .headerContainer {
@@ -18,7 +17,7 @@ body {
   min-width: 100%;
   position: absolute;
   background-color: #FFFFFF;
-  z-index: 10;
+  z-index: 11;
   position: fixed;
 }
 
@@ -50,6 +49,10 @@ body {
 .logo {
   height: 21px;
   width: 264px;
+}
+
+#home {
+  cursor: pointer;
 }
 
 .orderButton {
@@ -316,7 +319,6 @@ body {
 
 .faqContainer {
   width: 1100px;
-  
   margin-left: auto;
   margin-right: auto;
   font-family: 'Poppins';
@@ -331,35 +333,58 @@ body {
 
 .faqTitle {
   font-size: 62px;
-
 }
 
 .faqAccordion {
-  background-color: var(--white);
   margin-bottom: 20px;
   padding: 0px 15px;
   border-radius: 5px;
-  cursor: pointer;
+  
 }
 
-#faqQuestion {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: bold;
+.faqQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #22B573;
 }
 
-#answerContainer {
+.faqQuestion.selected {
+  color: #191C3F;
+}
+
+.faqQuestion p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.faqAnswer {
   font-size: 14px;
   display: flex;
   gap: 90px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faqAnswer.show {
+  height: auto;
+  max-height: 999px;
+  padding-bottom: 50px;
 }
 
 .answer {
   width: 400px;
   line-height: 24px;
+}
+
+.line {
+  border: 1px solid white;
 }
 
 .contactDiv {
@@ -372,8 +397,8 @@ body {
 .contactText {
   font-size: 14px;
   color: #292F3D;
-  margin-top: 40px;
-  padding-bottom: 30px;
+  margin-top: 140px;
+  padding-bottom: 50px;
 }
 
 .contactUs {
@@ -389,3 +414,17 @@ body {
   width: 100%;
   position: absolute;
 }
+
+.productsContainer {
+  width: 1100px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  position: absolute;
+  top: 960px;
+  z-index: 10;
+  justify-content: space-between;
+}
+
+
+

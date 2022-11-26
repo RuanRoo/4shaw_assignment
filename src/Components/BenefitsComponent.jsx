@@ -1,4 +1,5 @@
 import Nav from "./Nav"
+import Products from "./Products"
 
 
 function BenefitsComponent() {
@@ -8,6 +9,7 @@ function BenefitsComponent() {
   return (
     <div className="benefitsContainer">
         <Nav />
+        <Products />
     </div>
   )
 }
