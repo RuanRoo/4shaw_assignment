@@ -385,6 +385,7 @@ body {
 
 .line {
   border: 1px solid white;
+  background-color: white;
 }
 
 .contactDiv {
@@ -426,5 +427,272 @@ body {
   justify-content: space-between;
 }
 
+.productBlock1 {
+  background-color: #FF4856;
+  width: 210px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
 
+.productBlock2 {
+  background-color: #22B573;
+  width: 210px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
 
+.productBlock3 {
+  background-color: #FF9D00;
+  width: 210px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
+
+.valueText {
+  font-family: 'Geometos';
+  font-size: 20px;
+  color: #FFFFFF;
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+.shadow1 {
+  background-color: #96280a5b;
+  min-height: 15px;
+}
+.shadow2 {
+  background-color: #179b608e;
+  min-height: 15px;
+}
+.shadow3 {
+  background-color: #e25a068d;
+  min-height: 15px;
+}
+
+.whiteBlock {
+  height: 670px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.productDetails {
+  text-align: center;
+}
+
+.productTitle {
+  font-family: 'Geometos';
+  font-size: 17px;
+}
+
+.subscribtionContainer1 {
+  width: 216px;
+  height: 42px;
+  border: 2px solid #FF4856;
+  border-radius: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribtionContainer2 {
+  width: 216px;
+  height: 42px;
+  border: 2px solid #22B573;
+  border-radius: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribtionContainer3 {
+  width: 216px;
+  height: 42px;
+  border: 2px solid #FF9D00;
+  border-radius: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button1 {
+  width: 65px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 35px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.button1.selected {
+  width: 65px;
+  height: 39px;
+  background-color: #FF4856;
+  border-radius: 45px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.button2 {
+  width: 65px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 35px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.button2.selected {
+  width: 65px;
+  height: 39px;
+  background-color: #22B573;
+  border-radius: 45px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.button3 {
+  width: 65px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 35px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.button3.selected {
+  width: 65px;
+  height: 39px;
+  background-color: #FF9D00;
+  border-radius: 45px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+.monthSubscription {
+  font-family: 'Geometos';
+  font-size: 12px;
+  color: #FF4856;
+  margin-top: 18px;
+  letter-spacing: 2px;
+}
+
+.monthSubscription2 {
+  font-family: 'Geometos';
+  font-size: 12px;
+  color: #22B573;
+  margin-top: 18px;
+  letter-spacing: 2px;
+}
+
+.monthSubscription3 {
+  font-family: 'Geometos';
+  font-size: 12px;
+  color: #FF9D00;
+  margin-top: 18px;
+  letter-spacing: 2px;
+}
+
+.price {
+  width: 145px;
+  margin: 25px auto 10px auto;
+  font-family: 'Geometos';
+  font-size: 36px;
+  
+}
+
+.price h1 {
+  margin-bottom: 5px;
+  letter-spacing: 5px;
+}
+
+.price p {
+  font-size: 14px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.line2 {
+  border: 1px solid #70707043;
+  background-color: #70707043;
+  margin-bottom: 15px;
+}
+
+.servings {
+  font-family: 'Geometos';
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.placeOrder {
+  width: 134px;
+  height: 39px;
+  background-color: black;
+  border-radius: 45px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.cancelButton {
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Geometos';
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}

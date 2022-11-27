@@ -20,7 +20,7 @@ const FAQ = () => {
         </div>
         <div className="faqAccordion">
           {FAQData.map((item, i) => (
-            <div className="faqItem">
+            <div className="faqItem" key={i}>
               <div
                 className={
                   selected === i ? "faqQuestion selected" : "faqQuestion"
